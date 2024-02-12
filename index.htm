@@ -3,9 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Project</title>
+    <title>Mastering Git Through Practical Application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+           
+            <li><a href="#setting-up">Setting Up Environment</a></li>
+            <li><a href="#creating-repo">Creating & Cloning Repo</a></li>
+            <li><a href="#basic-operations">Basic Git Operations</a></li>
+            <li><a href="#branching">Branching with VS Code</a></li>
+            <li><a href="#remote-repositories">Working with Remote Repositories</a></li>
+            <li><a href="#pull-requests">Pull Requests & Reviews</a></li>
+        </ul>
+    </nav>
+ <!-- Mastering Git Title -->
+    <section id="home">
+        <div class="container">
+            <h1>Mastering Git Through Practical Application</h1>
+            <p>Web development is an ever-changing industry, hence mastery of version control is necessary. Through this undertaking, you will grasp Git at a new level and be compelled to chronicle your learning experience.</p>
+            <br><br>
+            <img src = "img/gitlogo3.png" height ="400" >
+        </div>
+    </section>
+
+ <!-- Setting up the enviornment -->
+    <section id="setting-up">
+        <div class="container">
+            <h2>Setting Up the Environment</h2>
+            <p>Follow these steps to set up your environment:</p>
+            <ol>
+                <li>Download and install Git from <a href="https://git-scm.com/" target="_blank">git-scm.com</a>.</li>
+                <li>Download and install Visual Studio Code from <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a>.</li>
+                <li>Open Visual Studio Code.</li>
+                <li>In VS Code, go to File > Preferences > Settings (or press Ctrl + ,).</li>
+                <li>Search for "Git: Enabled" and ensure it's checked.</li>
+                <li>Search for "Git: Path" and ensure it's set to the path where Git is installed on your system.</li>
+                <li>Press Ctrl + ` to open the integrated terminal in VS Code.</li>
+                <li>Run the command <code>git --version</code> to verify that Git is installed and properly configured.</li>
+             
+            </ol>
+        </div>
+    </section>
+
+    <img src = "img/githublogo2.png" height ="400" >
+
+     <!-- Creating and Cloning a Github repo -->
+    <section id="creating-repo">
+        <div class="container">
+            <h2>Creating and Cloning a GitHub Repository</h2>
+            <p>Create a new repository on GitHub. Clone the repository using VS Code's integrated Git support.</p>
+            <ol>
+                <li>Start by going to your GitHub account and then click on “New” button.</li>
+                <li>Type in the repository name, description and choose visibility as either public or private depending on your requirement.</li>
+                <li>Optionally, you can add a .gitignore file, license and initialize this repository with a README file.</li>
+                <li>To create the repository tap "Create repository" link.</li>
+                <li>After creating the repository, copy its URL (for instance: https://github.com/your-username/repository-name.git).</li>
+                <li>On Visual Studio Code go to Command Palette (Ctrl + Shift + P), type “Git: Clone” then select ‘Git: Clone’ from drop down list given.</li>
+                <li>Once copied into an input field, hit Enter button.</li>
+                <li>Choose the local directory where you want to clone the repository and press Enter.</li>
+                <li>VS Code will clone the repository to your local machine.</li>
+                <li>After that, you can start working on this locally and push changes made to remote GitHub.</li>
+            
+        </div>
+    </section>
+
+     <!-- Basic git operations in vs code -->
+    <section id="basic-operations">
+        <div class="container">
+            <h2>Basic Git Operations in VS Code</h2>
+            <p>Perform basic Git operations using the VS Code GUI:</p>
+            <ul>
+                <li><strong>Status:</strong> Shows the status of files in the working directory and staging area</li>
+                <li><strong>Add:</strong> Adds changes in the working directory to the staging area</li>
+                <li><strong>Commit:</strong> Records changes in the staging area to the repository</li>
+                <li><strong>Push:</strong> Pushes committed changes from the local repository to a remote repository</li>
+                <li><strong>Pull:</strong> Fetches changes from a remote repository and merges them into the local repository</li>
+            </ul>
+            <p>These operations will allow you to manage your code changes efficiently and collaborate effectively with your team.</p>
+        </div>
+    </section>
+
+     <!-- branching w vs code -->
+    <section id="branching">
+        <div class="container">
+            <h2>Branching with VS Code</h2>
+            
+            
+                <p>Create a new branch for feature development or bug fixes and be able to switch between branches:</p>
+                <ol>
+                    <li>Open the project folder in Visual Studio Code where you want to create a new branch.</li>
+                    <li>Click on the branch name at the bottom-left corner of the VS Code window that usually shows default branch name (e.g., "main" or "master").</li>
+                    <li>Select “Create new branch” option from the dropdown menu that appears.</li>
+                    <li>Supply an input field with a name for your new branch. It should be a descriptive name for the use of this partition e.g., “feature/add-login-page”.</li>
+                    <li>Hit Enter to make this new branch. Visual Studio Code will automatically switch to it.</li>
+                    <li>To change branches, click on the branch name in bottom left corner of screen and choose desired one on drop down menu.</li>
+                    <li>To merge between branches, first move over to where you would like changes merged into (e.g. switch to "main" branch).</li>
+                    <li>Clicking again on the branch name bottom-left of screen and selecting “Merge branch…” from contextual menu.</li>
+                    <li>From all available branches, pick one which can be suitable as destination for merging current one into it.</li>
+                    <li>Address any possible merge conflicts and commit changes needed for full process of merging.</li>
+                </ol>
+                
+                
+         
+        </div>
+    </section>
+
+     <!-- working w remote repos -->
+    <section id="remote-repositories">
+        <div class="container">
+            <h2>Working with Remote Repositories</h2>
+            <p>Add and manage remote repositories directly from VS Code. Push to and pull from these remotes using the VS Code interface.</p>
+            <ol>
+                <li>Open the project folder in Visual Studio Code with your local repository.</li>
+                <li>Source Control view can be opened by clicking on the left sidebar icon or pressing Ctrl + Shift + G.</li>
+                <li>From Source Control view, click on three dots (...) at the top to open more actions menu.</li>
+                <li>"Remote" then "Add Remote" from more actions menu will bring up a new remote repository.</li>
+                <li>Give a name (e.g., “origin”) to the remote repository and its URL (e.g., https://github.com/username/repository.git).</li>
+                <li>To add a remote repository, click on “Add Remote” option.</li>
+                <li>Staging changes for your file, in order to push them to the remote repo, can be done by using ‘+’ button located next to such files in the Source Control view.</li>
+                <li>Enter a commit message into the text field at the top of Source Control view and you need to press check mark button in order to commit your changes.</li>
+                <li>Again, select “Push” after accessing three dots (...) from Source control View so that changes made are sent via network connection to remote repository.</li>
+                <li>Three dots (...) at the top of Source Control view can be clicked again, then choose Push after doing this..</li>
+                <li>Clicking ... at the top of source control views again select push for pushing changes into remote repositories.</li>
+            </ol>
+            
+        </div>
+    </section>
+ <!-- pull req and code reviews within vs code -->
+    <section id="pull-requests">
+        <div class="container">
+            <h2>Pull Requests and Code Reviews within VS Code</h2>
+            <p>Create pull requests using GitHub and VS Code. Review and discuss pull requests.</p>
+            <ol>
+                <li>Before creating a pull request, make sure you commit and push your changes to your branch on GitHub.</li>
+                <li>In your GitHub repository, navigate to the branch where you want to create the pull request.</li>
+                <li>Click the "New pull request" button.</li>
+                <li>GitHub will automatically detect the base and compare the collections to your pull request. Review the changes and provide a title and description for your pull request.</li>
+                <li>Click the "Create pull request" button to create a pull request.</li>
+                <li>Once the pull request is made, it will show up in the "Pull Request" tab of your repository on GitHub.</li>
+                <li>To view and discuss pull requests in Visual Studio Code, open the GitHub Pull Request view by clicking the GitHub icon in the sidebar or pressing Ctrl + Shift + P to search for "GitHub: Open Pull Request".</li>
+                <li>In the GitHub Pull Requests view, you will see a list of open pull requests for your repository. Click on the pull request to see its details.</li>
+                <li>You can view changes to the pull request, leave comments, and discuss changes with your team members directly in Visual Studio Code.</li>
+                <li>Click the merge button in the GitHub Pull Request view to merge the pull requests. You may need valid permission to collect pull requests.</li>
+                <li>After you merge the pull request, you can delete the branch associated with the pull request if it is no longer needed.</li>
+            </ol>
+            
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; Mastering Git Through Practical Application. </p>
+    </footer>
+    
+
 </body>
 </html>
